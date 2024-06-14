@@ -7,6 +7,7 @@ from utils.api import automationexercise_api
 
 
 """ - GET to all products list"""
+
 def test_can_get_products_list():
     print("\nMethod GET to all products list")
     result_get = automationexercise_api.get_all_products_list()
