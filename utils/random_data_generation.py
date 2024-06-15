@@ -44,6 +44,40 @@ class Data_generation:
         return user_data[0]
 
 
+    """Generate user data with invalid email format"""
+    def generate_user_data_with_invalid_email_format(num_of_users):
+        # Create a Faker instance.
+        fake = Faker()
+        fake.add_provider(internet)
+        user_data = []
+
+        for _ in range(num_of_users):
+            # Create a dictionary representing a user with various attributes.
+            user = {
+                "name": fake.name(),
+                "email": fake.name(),
+                "password": fake.password(),
+                "title": "Mr",
+                "birth_date": random.randint(1, 31),
+                "birth_month": random.randint(1, 12),
+                "birth_year": random.randint(1920, 2024),
+                "firstname": fake.name(),
+                "lastname": fake.name(),
+                "company": fake.company(),
+                "address1": fake.address(),
+                "address2": fake.address(),
+                "country": fake.country(),
+                "zipcode": fake.zipcode(),
+                "state": fake.name(),
+                "city": fake.city(),
+                "mobile_number": fake.phone_number()
+            }
+            # Append the user data dictionary to the user_data list.
+            user_data.append(user)
+        # Return generated user data.
+        return user_data[0]
+
+
     """Generate user data for registration with only name, email and password"""
     def generate_user_data_only_name_email_and_password(num_of_users):
         # Create a Faker instance.
@@ -716,8 +750,8 @@ class Data_generation:
         return user_data[0]
 
 
-    """Generate user data for registration with name that contains 100 chars"""
-    def generate_user_data_with_100_chars_name(num_of_users):
+    """Generate user data for registration with name that contains 1000 chars"""
+    def generate_user_data_with_1000_chars_name(num_of_users):
         # Create a Faker instance.
         fake = Faker()
         fake.add_provider(internet)
@@ -725,9 +759,9 @@ class Data_generation:
 
         for _ in range(num_of_users):
             # Create a dictionary representing a user with various attributes.
-            def generate_word_100_letters():
-                return ''.join(random.choices(string.ascii_lowercase, k=100))
-            word = generate_word_100_letters()
+            def generate_word_1000_letters():
+                return ''.join(random.choices(string.ascii_lowercase, k=1000))
+            word = generate_word_1000_letters()
             user = {
                 "name": word,
                 "email": fake.free_email(),
@@ -753,8 +787,8 @@ class Data_generation:
         return user_data[0]
 
 
-    """Generate user data for registration with email that contains 100 chars"""
-    def generate_user_data_with_100_chars_email(num_of_users):
+    """Generate user data for registration with email that contains 1000 chars"""
+    def generate_user_data_with_1000_chars_email(num_of_users):
         # Create a Faker instance.
         fake = Faker()
         fake.add_provider(internet)
@@ -762,9 +796,9 @@ class Data_generation:
 
         for _ in range(num_of_users):
             # Create a dictionary representing a user with various attributes.
-            def generate_word_100_letters():
-                return ''.join(random.choices(string.ascii_lowercase, k=100))
-            word = generate_word_100_letters()
+            def generate_word_1000_letters():
+                return ''.join(random.choices(string.ascii_lowercase, k=1000))
+            word = generate_word_1000_letters()
             user = {
                 "name": fake.name(),
                 "email": word,
@@ -790,8 +824,8 @@ class Data_generation:
         return user_data[0]
 
 
-    """Generate user data for registration with password that contains 100 chars"""
-    def generate_user_data_with_100_chars_password(num_of_users):
+    """Generate user data for registration with password that contains 1000 chars"""
+    def generate_user_data_with_1000_chars_password(num_of_users):
         # Create a Faker instance.
         fake = Faker()
         fake.add_provider(internet)
@@ -799,9 +833,9 @@ class Data_generation:
 
         for _ in range(num_of_users):
             # Create a dictionary representing a user with various attributes.
-            def generate_word_100_letters():
-                return ''.join(random.choices(string.ascii_lowercase, k=100))
-            word = generate_word_100_letters()
+            def generate_word_1000_letters():
+                return ''.join(random.choices(string.ascii_lowercase, k=1000))
+            word = generate_word_1000_letters()
             user = {
                 "name": fake.name(),
                 "email": fake.free_email(),

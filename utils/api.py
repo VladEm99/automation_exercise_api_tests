@@ -11,7 +11,7 @@ base_url = "https://automationexercise.com/api"
 class automationexercise_api():
 
 
-    """ - GET method for getting all products list"""
+    """1 - GET method for getting all products list"""
     @staticmethod
     def get_all_products_list():
         get_resource = "/productsList" #resource of method GET
@@ -22,7 +22,7 @@ class automationexercise_api():
         return result_get
 
 
-    """DELETE to all products list"""
+    """2 - DELETE to all products list"""
     @staticmethod
     def delete_to_all_products_list():
         delete_resource = "/productsList" #resource of method DELETE
@@ -33,7 +33,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """PUT to all products list"""
+    """3 - PUT to all products list"""
     @staticmethod
     def put_to_all_products_list():
         put_resource = "/productsList"  # resource of method PUT
@@ -44,7 +44,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - POST method to all products list"""
+    """4 - POST method to all products list"""
     @staticmethod
     def post_all_products_list():
         post_resource = "/productsList"  # resource of method POST
@@ -55,7 +55,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - GET to All Brands List"""
+    """5 - GET to All Brands List"""
     @staticmethod
     def get_to_all_brands_list():
         get_resource = "/brandsList"  # resource of method GET
@@ -66,7 +66,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - PUT To All Brands List"""
+    """6 - PUT To All Brands List"""
     @staticmethod
     def put_to_all_brands_list():
         put_resource = "/brandsList"  # resource of method PUT
@@ -77,7 +77,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - DELETE To All Brands List"""
+    """7 - DELETE To All Brands List"""
     @staticmethod
     def delete_to_all_brands_list():
         delete_resource = "/brandsList"  # resource of method DELETE
@@ -88,7 +88,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - POST To All Brands List"""
+    """8 - POST To All Brands List"""
     @staticmethod
     def post_to_all_brands_list():
         post_resource = "/brandsList"  # resource of method POST
@@ -99,7 +99,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to search product"""
+    """9 - POST to search product"""
     @staticmethod
     def post_to_search_product():
         json_for_product_search = Data_generation.generate_item_to_search()
@@ -111,7 +111,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - PUT to search product"""
+    """10 - PUT to search product"""
     @staticmethod
     def put_to_search_product():
         put_resource = "/searchProduct"  # resource of method PUT
@@ -122,7 +122,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - DELETE to search product"""
+    """11 - DELETE to search product"""
     @staticmethod
     def delete_to_search_product():
         delete_resource = "/searchProduct"  # resource of method DELETE
@@ -133,7 +133,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - GET to search product"""
+    """12 - GET to search product"""
     @staticmethod
     def get_to_search_product():
         get_resource = "/searchProduct"  # resource of method GET
@@ -144,7 +144,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - POST to search product without search_product parameter"""
+    """13 - POST to search product without search_product parameter"""
     @staticmethod
     def post_to_search_product_without_search_parameter():
         post_resource = "/searchProduct"  # resource of method POST
@@ -155,7 +155,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to search non existent product"""
+    """14 - POST to search non existent product"""
     @staticmethod
     def post_to_search_non_existent_product():
         json_for_product_search = Data_generation.generate_word_100_letters()
@@ -167,7 +167,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST To Verify Login without email parameter"""
+    """15 - POST To Verify Login without email parameter"""
     @staticmethod
     def post_to_verify_login_without_email():
         data = {"email": None, "password": "123123"}
@@ -179,7 +179,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST To Verify Login without password parameter"""
+    """16 - POST To Verify Login without password parameter"""
     @staticmethod
     def post_to_verify_login_without_password():
         data = {"email": "123@qwe.ee", "password": None}
@@ -191,7 +191,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST To Verify Login without password and email parameter"""
+    """17 - POST To Verify Login without password and email parameter"""
     @staticmethod
     def post_to_verify_login_without_password_and_email():
         data = {"email": None, "password": None}
@@ -203,7 +203,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - DELETE To Verify Login"""
+    """18 - DELETE To Verify Login"""
     @staticmethod
     def delete_to_verify_login():
         delete_resource = "/verifyLogin"  # resource of method DELETE
@@ -214,7 +214,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - GET To Verify Login"""
+    """19 - GET To Verify Login"""
     @staticmethod
     def get_to_verify_login():
         get_resource = "/verifyLogin"  # resource of method GET
@@ -225,7 +225,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - PUT To Verify Login"""
+    """20 - PUT To Verify Login"""
     @staticmethod
     def put_to_verify_login():
         put_resource = "/verifyLogin"  # resource of method PUT
@@ -236,7 +236,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - POST To Verify Login with invalid details"""
+    """21 - POST To Verify Login with invalid details"""
     @staticmethod
     def post_to_verify_login_with_invalid_details():
         login_data = {"email": "0", "password": "0"}
@@ -248,7 +248,7 @@ class automationexercise_api():
         return result_post
 
 
-    """" - POST To Verify Login with valid details"""
+    """"22 - POST To Verify Login with valid details"""
     @staticmethod
     def post_to_create_new_user_and_verify_login_with_valid_details():
         # generating new user data
@@ -274,7 +274,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST To Create/Register User Account"""
+    """23 - POST To Create/Register User Account"""
     @staticmethod
     def post_to_register_user():
         user_data = Data_generation.generate_user_data(1)
@@ -286,7 +286,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - PUT To Create/Register User Account"""
+    """24 - PUT To Create/Register User Account"""
     @staticmethod
     def put_to_register_user():
         user_data = Data_generation.generate_user_data(1)
@@ -298,7 +298,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - DELETE To Create/Register User Account"""
+    """25 - DELETE To Create/Register User Account"""
     @staticmethod
     def delete_to_register_user():
         user_data = Data_generation.generate_user_data(1)
@@ -310,7 +310,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - GET To Create/Register User Account"""
+    """26 - GET To Create/Register User Account"""
     @staticmethod
     def get_to_register_user():
         user_data = Data_generation.generate_user_data(1)
@@ -322,7 +322,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - PUT METHOD To Update User Account"""
+    """27 - PUT METHOD To Update User Account"""
     @staticmethod
     def put_to_create_and_update_user_account_data():
         # generating new user data
@@ -361,7 +361,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - GET METHOD To Update User Account"""
+    """28 - GET METHOD To Update User Account"""
     @staticmethod
     def get_to_create_and_update_user_account_data():
         # generating new user data
@@ -400,7 +400,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - DELETE METHOD To Update User Account"""
+    """29 - DELETE METHOD To Update User Account"""
     @staticmethod
     def delete_to_create_and_update_user_account_data():
         # generating new user data
@@ -439,7 +439,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - POST METHOD To Update User Account"""
+    """30 - POST METHOD To Update User Account"""
     @staticmethod
     def post_to_create_and_update_user_account_data():
         # generating new user data
@@ -478,7 +478,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - DELETE METHOD To create new user and Delete created User Account"""
+    """31 - DELETE METHOD To create new user and Delete created User Account"""
     @staticmethod
     def delete_to_create_new_user_account_and_delete_it():
         # generating new user data
@@ -505,7 +505,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - GET METHOD To create new user and Delete created User Account"""
+    """32 - GET METHOD To create new user and Delete created User Account"""
     @staticmethod
     def get_to_create_new_user_account_and_delete_it():
         # generating new user data
@@ -532,7 +532,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - PUT METHOD To create new user and Delete created User Account"""
+    """33 - PUT METHOD To create new user and Delete created User Account"""
     @staticmethod
     def put_to_create_new_user_account_and_delete_it():
         # generating new user data
@@ -559,7 +559,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - POST METHOD To create new user and Delete created User Account"""
+    """34 - POST METHOD To create new user and Delete created User Account"""
     @staticmethod
     def post_to_create_new_user_account_and_delete_it():
         # generating new user data
@@ -586,7 +586,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - GET to create user account and then get details by email"""
+    """35 - GET to create user account and then get details by email"""
     @staticmethod
     def get_to_create_user_and_then_get_info_by_email():
         # generating new user data
@@ -610,7 +610,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - GET user account detail by email"""
+    """36 - GET user account detail by email"""
     @staticmethod
     def get_user_info_by_email(email_data):
         get_resource = "/getUserDetailByEmail"
@@ -621,7 +621,7 @@ class automationexercise_api():
         return result_get
 
 
-    """ - DELETE METHOD To  Delete User Account"""
+    """37 - DELETE METHOD To  Delete User Account"""
     @staticmethod
     def delete_to_delete_account(email, password):
         # making API request to delete created account
@@ -633,7 +633,7 @@ class automationexercise_api():
         return result_delete
 
 
-    """ - POST to register new account"""
+    """38 - POST to register new account"""
     @staticmethod
     def post_to_register_new_user(name, email, password, title, birth_date, birth_month, birth_year,
                                   firstname, lastname, company, address1, address2, country, zipcode,
@@ -648,7 +648,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - PUT to update acc"""
+    """39 - PUT to update acc"""
     @staticmethod
     def put_to_update_acc():
         # data to update user info
@@ -662,7 +662,7 @@ class automationexercise_api():
         return result_put
 
 
-    """ - register user with static data"""
+    """40 - register user with static data"""
     @staticmethod
     def post_to_register_user_static():
         data_to_create_user = Data_generation.give_static_data()
@@ -674,7 +674,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - register user with static data without name"""
+    """41 - register user with static data without name"""
     @staticmethod
     def post_to_register_user_with_no_name():
         # generating new user data
@@ -687,7 +687,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - register user with static data without email"""
+    """42 - register user with static data without email"""
     @staticmethod
     def post_to_register_user_with_no_email():
         # generating new user data
@@ -700,7 +700,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - register user with static data without password"""
+    """43 - register user with without password"""
     @staticmethod
     def post_to_register_user_with_no_password():
         # generating new user data
@@ -713,7 +713,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without title"""
+    """44 - POST to register user without title"""
     @staticmethod
     def post_to_register_user_with_no_title():
         # generating new user data
@@ -726,7 +726,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without phone number"""
+    """45 - POST to register user without phone number"""
     @staticmethod
     def post_to_register_user_with_no_phone_number():
         # generating new user data
@@ -739,7 +739,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without birth date"""
+    """46 - POST to register user without birth date"""
     @staticmethod
     def post_to_register_user_with_no_birth_date():
         # generating new user data
@@ -752,7 +752,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without birth month"""
+    """47 - POST to register user without birth month"""
     @staticmethod
     def post_to_register_user_with_no_birth_month():
         # generating new user data
@@ -765,7 +765,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without birth year"""
+    """48 - POST to register user without birth year"""
     @staticmethod
     def post_to_register_user_with_no_birth_year():
         # generating new user data
@@ -778,7 +778,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without firstname"""
+    """49 - POST to register user without firstname"""
     @staticmethod
     def post_to_register_user_without_firstname():
         # generating new user data
@@ -791,7 +791,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without lastname"""
+    """50 - POST to register user without lastname"""
     @staticmethod
     def post_to_register_user_without_lastname():
         # generating new user data
@@ -804,7 +804,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without company"""
+    """51 - POST to register user without company"""
     @staticmethod
     def post_to_register_user_without_company():
         # generating new user data
@@ -817,7 +817,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without address1"""
+    """52 - POST to register user without address1"""
     @staticmethod
     def post_to_register_user_without_address1():
         # generating new user data
@@ -830,7 +830,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without address2"""
+    """53 - POST to register user without address2"""
     @staticmethod
     def post_to_register_user_without_address2():
         # generating new user data
@@ -843,7 +843,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without country"""
+    """54 - POST to register user without country"""
     @staticmethod
     def post_to_register_user_without_country():
         # generating new user data
@@ -856,7 +856,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without zipcode"""
+    """55 - POST to register user without zipcode"""
     @staticmethod
     def post_to_register_user_without_zipcode():
         # generating new user data
@@ -869,7 +869,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without state"""
+    """56 - POST to register user without state"""
     @staticmethod
     def post_to_register_user_without_state():
         # generating new user data
@@ -882,7 +882,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user without city"""
+    """57 - POST to register user without city"""
     @staticmethod
     def post_to_register_user_without_city():
         # generating new user data
@@ -895,7 +895,7 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user with only name, email and password"""
+    """58 - POST to register user with only name, email and password"""
     @staticmethod
     def post_to_register_user_with_only_name_email_and_password():
         # generating new user data
@@ -908,11 +908,11 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user with 100 chars name"""
+    """59 - POST to register user with 1000 chars name"""
     @staticmethod
-    def post_to_register_user_with_100_chars_name():
+    def post_to_register_user_with_1000_chars_name():
         # generating new user data
-        user_registration_data = Data_generation.generate_user_data_with_100_chars_name(1)
+        user_registration_data = Data_generation.generate_user_data_with_1000_chars_name(1)
         post_resource = "/createAccount"  # resource of method POST
         post_url = base_url + post_resource
         print(post_url)
@@ -921,11 +921,11 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user with 100 chars email"""
+    """60 - POST to register user with 1000 chars email"""
     @staticmethod
-    def post_to_register_user_with_100_chars_email():
+    def post_to_register_user_with_1000_chars_email():
         # generating new user data
-        user_registration_data = Data_generation.generate_user_data_with_100_chars_email(1)
+        user_registration_data = Data_generation.generate_user_data_with_1000_chars_email(1)
         post_resource = "/createAccount"  # resource of method POST
         post_url = base_url + post_resource
         print(post_url)
@@ -934,11 +934,11 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST to register user with 100 chars email"""
+    """61 - POST to register user with 1000 chars email"""
     @staticmethod
-    def post_to_register_user_with_100_chars_password():
+    def post_to_register_user_with_1000_chars_password():
         # generating new user data
-        user_registration_data = Data_generation.generate_user_data_with_100_chars_password(1)
+        user_registration_data = Data_generation.generate_user_data_with_1000_chars_password(1)
         post_resource = "/createAccount"  # resource of method POST
         post_url = base_url + post_resource
         print(post_url)
@@ -947,13 +947,196 @@ class automationexercise_api():
         return result_post
 
 
-    """ - POST To Verify Login without password parameter"""
+    """62 - POST to register user with invalid email format"""
     @staticmethod
-    def post_to_verify_login_without_password():
-        data = {"email": "123@qwe.ee", "password": None}
-        post_resource = "/verifyLogin"  # resource of method POST
+    def post_to_create_user_with_invalid_email_format():
+        # generating new user data
+        user_registration_data = Data_generation.generate_user_data_with_invalid_email_format(1)
+        post_resource = "/createAccount"  # resource of method POST
         post_url = base_url + post_resource
         print(post_url)
-        result_post = requests.post(post_url, data=data)
+        result_post = requests.post(post_url, data=user_registration_data)
         print(result_post.text)
         return result_post
+
+    """63 - Create new user, update, get user details and delete created user account"""
+    @staticmethod
+    def create_new_user_update_get_info_and_delete_it():
+        # generating new user data
+        user_registration_data = Data_generation.generate_user_data(1)
+
+        # getting email and password from generated data to delete later
+        delete_data = {
+            "email": user_registration_data["email"],
+            "password": user_registration_data["password"]
+        }
+
+        # making API request to register new user with generated data
+        post_resource_to_register = "/createAccount"  # resource of method POST
+        post_url_to_register = base_url + post_resource_to_register
+        result_post = requests.post(post_url_to_register, data=user_registration_data)
+
+        # static data to update user
+        data_to_update_user = {
+            "name": user_registration_data["name"],
+            "email": user_registration_data["email"],
+            "password": user_registration_data["password"],
+            "title": "Mr",
+            "birth_date": 5,
+            "birth_month": 10,
+            "birth_year": 1999,
+            "firstname": "Vlad",
+            "lastname": "VL",
+            "company": "test",
+            "address1": "test",
+            "address2": "test",
+            "country": "test",
+            "zipcode": 1555,
+            "state": "test",
+            "city": "test",
+            "mobile_number": 777777
+        }
+
+        # making API request to update user account data
+        put_resource_to_update_user = "/updateAccount"
+        put_url_to_update_user = base_url + put_resource_to_update_user
+        print(put_url_to_update_user)
+        result_put = requests.put(put_url_to_update_user, data=data_to_update_user)
+        print(result_put.text)
+
+        # getting email to get user info later
+        email = {"email": data_to_update_user['email']}
+
+        # making API request to get user account data by email
+        get_resource = "/getUserDetailByEmail"
+        get_url = base_url + get_resource
+        print(get_url)
+        result_get = requests.get(get_url, email)
+        print(result_get.text)
+
+        # making API request to delete created account
+        delete_resource = "/deleteAccount"  # resource of method POST
+        delete_url = base_url + delete_resource
+        print(delete_url)
+        result_delete = requests.delete(delete_url, data=delete_data)
+        print(result_delete.text)
+        return result_delete
+
+
+    """64 - Create new user, delete and verify deleting by getting info by email"""
+    @staticmethod
+    def create_new_user_delete_it_and_check_by_email():
+        # generating new user data
+        user_registration_data = Data_generation.generate_user_data(1)
+
+        # getting email and password from generated data to delete later
+        delete_data = {
+            "email": user_registration_data["email"],
+            "password": user_registration_data["password"]
+        }
+
+        # getting email to get user info later and verify that acc is deleted
+        email = {"email": user_registration_data['email']}
+
+        # making API request to register new user with generated data
+        post_resource_to_register = "/createAccount"  # resource of method POST
+        post_url_to_register = base_url + post_resource_to_register
+        result_post = requests.post(post_url_to_register, data=user_registration_data)
+
+        # making API request to delete created account
+        delete_resource = "/deleteAccount"  # resource of method POST
+        delete_url = base_url + delete_resource
+        print(delete_url)
+        result_delete = requests.delete(delete_url, data=delete_data)
+        print(result_delete.text)
+
+        # making API request to get user account data by email
+        get_resource = "/getUserDetailByEmail"
+        get_url = base_url + get_resource
+        print(get_url)
+        result_get = requests.get(get_url, email)
+        print(result_get.text)
+        return result_get
+
+
+    """65 - PUT to update user with invalid email format"""
+    @staticmethod
+    def create_new_user_and_update_user_data_with_invalid_email_format():
+
+        # generating new user data
+        user_registration_data = Data_generation.generate_user_data(1)
+
+        # static data to update user
+        data_to_update_user = {
+            "name": user_registration_data["name"],
+            "email": "invalid_email",
+            "password": user_registration_data["password"],
+            "title": "Mr",
+            "birth_date": 5,
+            "birth_month": 10,
+            "birth_year": 1999,
+            "firstname": "Vlad",
+            "lastname": "VL",
+            "company": "test",
+            "address1": "test",
+            "address2": "test",
+            "country": "test",
+            "zipcode": 1555,
+            "state": "test",
+            "city": "test",
+            "mobile_number": 777777
+        }
+
+        # making API request to register new user with generated data
+        post_resource_to_register = "/createAccount"  # resource of method POST
+        post_url_to_register = base_url + post_resource_to_register
+        result_post = requests.post(post_url_to_register, data=user_registration_data)
+
+        # making API request to update user account data
+        put_resource_to_update_user = "/updateAccount"
+        put_url_to_update_user = base_url + put_resource_to_update_user
+        print(put_url_to_update_user)
+        result_put = requests.put(put_url_to_update_user, data=data_to_update_user)
+        print(result_put.text)
+        return result_put
+
+    """66 - PUT to update user with invalid email format"""
+
+    @staticmethod
+    def create_new_user_and_update_user_data_with_invalid_password():
+        # generating new user data
+        user_registration_data = Data_generation.generate_user_data(1)
+
+        # static data to update user
+        data_to_update_user = {
+            "name": user_registration_data["name"],
+            "email": user_registration_data["email"],
+            "password": "invalid_password",
+            "title": "Mr",
+            "birth_date": 5,
+            "birth_month": 10,
+            "birth_year": 1999,
+            "firstname": "Vlad",
+            "lastname": "VL",
+            "company": "test",
+            "address1": "test",
+            "address2": "test",
+            "country": "test",
+            "zipcode": 1555,
+            "state": "test",
+            "city": "test",
+            "mobile_number": 777777
+        }
+
+        # making API request to register new user with generated data
+        post_resource_to_register = "/createAccount"  # resource of method POST
+        post_url_to_register = base_url + post_resource_to_register
+        result_post = requests.post(post_url_to_register, data=user_registration_data)
+
+        # making API request to update user account data
+        put_resource_to_update_user = "/updateAccount"
+        put_url_to_update_user = base_url + put_resource_to_update_user
+        print(put_url_to_update_user)
+        result_put = requests.put(put_url_to_update_user, data=data_to_update_user)
+        print(result_put.text)
+        return result_put
